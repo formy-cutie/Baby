@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#130d1b">
+<title>Happy Diwali, Nandini My Baby ❤️🪔</title>
+<style>
+:root{--gold:#f6cf78;--cream:#fff4dd;--pink:#f5b9cb;--night:#100b18}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% 15%,#43213d 0,#1b1025 45%,#090811 100%);color:var(--cream);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+#stars,.sparkles{position:fixed;inset:0;pointer-events:none;z-index:0}
+.star{position:absolute;width:2px;height:2px;background:#fff3c4;border-radius:50%;opacity:.7;animation:twinkle 2.6s infinite alternate}
+@keyframes twinkle{to{opacity:.15;transform:scale(.5)}}
+main{position:relative;z-index:1}.screen{min-height:100svh;display:none;align-items:center;justify-content:center;text-align:center;padding:34px 20px 46px;position:relative}.screen.active{display:flex;animation:appear .8s ease both}
+@keyframes appear{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
+.inner{width:min(760px,100%);margin:auto}.eyebrow{letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font:11px Arial,sans-serif}.title{font-size:clamp(36px,9vw,76px);line-height:1.08;margin:18px 0;color:#ffe7b2;text-shadow:0 0 28px #f2a94b55}.script{font-style:italic;color:#f7bfd0}.lead{font:16px/1.8 Arial,sans-serif;color:#f6e7dc;max-width:580px;margin:18px auto}
+.btn{border:1px solid #e8bd71;background:linear-gradient(135deg,#f7d68f,#c58b42);color:#24121d;padding:14px 24px;border-radius:999px;font:600 13px Arial,sans-serif;letter-spacing:.05em;cursor:pointer;box-shadow:0 8px 30px #e6ae5740;margin:12px 6px}
+.btn.ghost{background:transparent;color:#ffe8c0;border-color:#bd945f}.diya{font-size:74px;display:block;filter:drop-shadow(0 0 18px #ffb64e);animation:glow 2s infinite alternate;margin:14px}
+@keyframes glow{to{filter:drop-shadow(0 0 34px #ffb64e) brightness(1.25)}}
+.frame{padding:10px;border:1px solid #d9ad65;border-radius:18px;background:linear-gradient(145deg,#f7dca0,#80542f,#e9c47a);box-shadow:0 0 55px #f5b95a30;margin:24px auto;max-width:520px}
+.frame img{display:block;width:100%;max-height:62svh;object-fit:contain;border-radius:10px;background:#160e19}
+.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px auto}
+.photo-grid button{padding:0;border:1px solid #b98c54;border-radius:13px;overflow:hidden;background:#241625;cursor:pointer;aspect-ratio:3/4}
+.photo-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}.photo-grid button:active img{transform:scale(1.04)}
+.letter{background:#fff4df;color:#4a2b2b;padding:clamp(22px,5vw,42px);border-radius:8px;box-shadow:0 12px 50px #0008;text-align:left;font:16px/1.9 Georgia,serif;position:relative}
+.letter:before{content:"";position:absolute;inset:8px;border:1px solid #d6ad6d;pointer-events:none}
+.letter p{position:relative;margin:0 0 14px}.letter .sign{text-align:right;font-style:italic;color:#9a5b51}
+.controls{position:fixed;z-index:5;bottom:14px;left:0;right:0;display:flex;justify-content:center;gap:8px;padding:0 12px}.dots{display:flex;gap:6px;align-items:center}.dot{width:6px;height:6px;border-radius:50%;background:#ffffff55}.dot.on{background:var(--gold);width:20px;border-radius:9px}
+#lightbox{position:fixed;inset:0;background:#07050bed;z-index:10;display:none;align-items:center;justify-content:center;padding:18px}#lightbox img{max-width:100%;max-height:82svh;object-fit:contain;border:1px solid var(--gold);border-radius:12px}#lightbox.show{display:flex}
+.petal{position:fixed;top:-20px;z-index:2;pointer-events:none;animation:fall linear forwards;color:#f6b6c8}@keyframes fall{to{transform:translateY(110svh) rotate(520deg);opacity:0}}
+#fireworks{position:fixed;inset:0;z-index:2;pointer-events:none}
+@media(min-width:700px){.photo-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.photo-grid button{aspect-ratio:3/4}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style></head>
+<body><div id="stars"></div><canvas id="fireworks"></canvas>
+<main>
+<section class="screen active" id="s0"><div class="inner"><div class="eyebrow">A little light, a lot of love</div><span class="diya">🪔</span><h1 class="title">A little Diwali<br><span class="script">surprise for you</span></h1><p class="lead">Some lights are beautiful. Some people make life brighter. This one is for you.</p><button class="btn" onclick="go(1)">Open your surprise ✨</button></div></section>
+<section class="screen" id="s1"><div class="inner"><div class="eyebrow">For the girl who makes my world brighter</div><h2 class="title">Happy Diwali,<br><span class="script">Nandini My Baby ❤️🪔</span></h2><p class="lead">Aaj ki roshni, saari khushiyan aur har ek dua… sab tumhare naam.</p><span class="diya">🪔</span><button class="btn" onclick="go(2)">There's more for you →</button></div></section>
+<section class="screen" id="s2"><div class="inner"><div class="eyebrow">My favourite view</div><h2 class="title">Just <span class="script">you.</span></h2><div class="frame"><img src="photos/photo-1.jpg" alt="Nandini, photo 1"></div><p class="lead">Every picture holds a little moment I never want to forget.</p><button class="btn" onclick="go(3)">See our memories →</button></div></section>
+<section class="screen" id="s3"><div class="inner"><div class="eyebrow">Little moments, forever memories</div><h2 class="title">Our little <span class="script">gallery</span></h2><p class="lead">Tap any photo to see it properly. ❤️</p><div class="photo-grid" id="gallery"></div><button class="btn" onclick="go(4)">One thing I want to tell you →</button></div></section>
+<section class="screen" id="s4"><div class="inner"><div class="eyebrow">A note from my heart</div><h2 class="title">For my <span class="script">Nandini</span></h2><div class="letter"><p><b>Happy Diwali, my love! ❤️</b></p><p>Tumhari zindagi hamesha khushiyon, roshni aur pyaar se jagmagati rahe. Har diya tumhare chehre par ek nayi smile laaye, aur tumhare saare dreams poore hon.</p><p>You are one of the most beautiful parts of my life. Hamesha khush rehna, meri jaan. ❤️🪔</p><p class="sign">With all my love,<br>Ritik Raj Sah — Your Baby ❤️</p></div><button class="btn" onclick="go(5)">A final little wish →</button></div></section>
+<section class="screen" id="s5"><div class="inner"><div class="eyebrow">May your world always glow</div><span class="diya">🪔✨🪔</span><h2 class="title">Forever my<br><span class="script">favourite person</span> ❤️</h2><p class="lead">May every year bring you more reasons to smile, more dreams to chase, and more love than your heart can hold.</p><h3 style="color:var(--gold);font-weight:normal;letter-spacing:.12em">HAPPY DIWALI, NANDINI ❤️</h3><button class="btn ghost" onclick="go(0)">Watch again ↻</button></div></section>
+</main>
+<div class="controls"><button class="btn ghost" onclick="prev()" aria-label="Previous slide">←</button><div class="dots" id="dots"></div><button class="btn ghost" onclick="next()" aria-label="Next slide">→</button></div>
+<div id="lightbox" onclick="this.classList.remove('show')"><img id="lightbox-img" alt="Selected memory"></div>
+<script>
+const total=6;let current=0;
+const dots=document.getElementById('dots');
+for(let i=0;i<total;i++){let d=document.createElement('span');d.className='dot'+(i===0?' on':'');dots.appendChild(d)}
+function go(n){current=(n+total)%total;document.querySelectorAll('.screen').forEach((s,i)=>s.classList.toggle('active',i===current));[...dots.children].forEach((d,i)=>d.classList.toggle('on',i===current));if(current===5)burst();window.scrollTo(0,0)}
+function next(){go(current+1)}function prev(){go(current-1)}
+const gallery=document.getElementById('gallery');
+for(let i=1;i<=8;i++){const b=document.createElement('button');const im=document.createElement('img');im.src=`photos/photo-${i}.jpg`;im.alt=`Nandini memory ${i}`;im.loading='lazy';b.appendChild(im);b.onclick=()=>{document.getElementById('lightbox-img').src=im.src;document.getElementById('lightbox').classList.add('show')};gallery.appendChild(b)}
+const stars=document.getElementById('stars');for(let i=0;i<85;i++){let s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*3+'s';stars.appendChild(s)}
+function petal(){let p=document.createElement('span');p.className='petal';p.textContent=['✦','❀','♥'][Math.floor(Math.random()*3)];p.style.left=Math.random()*100+'%';p.style.fontSize=(10+Math.random()*14)+'px';p.style.animationDuration=(5+Math.random()*5)+'s';document.body.appendChild(p);setTimeout(()=>p.remove(),10500)}setInterval(petal,650);
+const c=document.getElementById('fireworks'),ctx=c.getContext('2d');let sparks=[];
+function resize(){c.width=innerWidth*devicePixelRatio;c.height=innerHeight*devicePixelRatio;ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0)}addEventListener('resize',resize);resize();
+function burst(){for(let k=0;k<5;k++){let x=innerWidth*(.18+Math.random()*.64),y=innerHeight*(.18+Math.random()*.38);for(let i=0;i<42;i++){let a=Math.PI*2*i/42,v=1+Math.random()*3;sparks.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,life:50+Math.random()*25,color=['#ffd27d','#ff8fae','#fff1c2'][k%3]})}}}
+function draw(){ctx.clearRect(0,0,innerWidth,innerHeight);sparks=sparks.filter(p=>p.life>0);for(let p of sparks){ctx.globalAlpha=Math.min(1,p.life/30);ctx.fillStyle=p.color;ctx.beginPath();ctx.arc(p.x,p.y,2,0,Math.PI*2);ctx.fill();p.x+=p.vx;p.y+=p.vy;p.vy+=.025;p.life--}ctx.globalAlpha=1;requestAnimationFrame(draw)}draw();
+</script></body></html>
